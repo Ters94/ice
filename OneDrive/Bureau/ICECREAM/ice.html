@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream</title>
+    <link rel="stylesheet" href="ice.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="ice.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>IceCream</h1>
+    </header>
+    <div
+      class="container"
+      id="image"
+      style="background-image: url('glace.jpg')"
+    >
+      <div class="PRIX">
+        <h3>Prix</h3>
+        <br />
+        <p>1 Boules: 2,5eu</p>
+        <br />
+        <p>2 Boules: 4,5eu</p>
+        <br />
+        <p>3 Boules: 6eu</p>
+      </div>
+      <div class="selection">
+        <label for="glace">choissisez votre glace:</label>
+        <select id="glace" name="glace">
+          <option value="cornet">cornet</option>
+          <option value="pot">pot</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="nbr">combien de boules:</label>
+        <input type="number" id="nbr" max="3" min="1" />
+        <br />
+        <br />
+        <ol id="list">
+          <select id="saveurs" name="saveurs">
+            <option value="Fraise">Fraise</option>
+            <option value="Citron">Citron</option>
+            <option value="Pistache">Pistache</option>
+          </select>
+          <select id="saveurs" name="saveurs">
+            <option value="Fraise">Fraise</option>
+            <option value="Citron">Citron</option>
+            <option value="Pistache">Pistache</option>
+          </select>
+          <select id="saveurs" name="saveurs">
+            <option value="Fraise">Fraise</option>
+            <option value="Citron">Citron</option>
+            <option value="Pistache">Pistache</option>
+          </select>
+        </ol>
+        <button class="btn" id="flavor">ajoutez un saveur</button>
+
+        <br />
+        <label>Rajoutez un Supplément:</label>
+        <select id="supp" name="supplément">
+          <option value="Sans">Sans Supplément</option>
+          <option value="chocolat">chocolat noir</option>
+          <option value="bueno">Bueno</option>
+          <option value="speculoos">Speculoos</option>
+        </select>
+        <br />
+        <br />
+        <button type="button" onclick="getInputValue();">Envoyer</button>
+        <button class="btn2" id="icenumber">rajouter des glaces</button>
+      </div>
+    </div>
+  </body>
+</html>
